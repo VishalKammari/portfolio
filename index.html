@@ -12,20 +12,20 @@
         <video class="back-video" loop autoplay muted plays-inline src="videos/galaxy.mp4" type="viseo/mp4"></video>
         <header>
             <div class="left">
-                <img src="images/profile.png" alt="logo">
-                <h1><span style="color:#72a1de ;">Vishal</span></h1>
+                <a href="index.html"><img src="images/profile.png" alt="logo"></a>
+                <h1><span style="color:#72a1de ;"><a href="index.html"style="text-decoration: none;">Vishal</a></span></h1>
             </div>
 
             <ul>
-                <li><a href="#" >About</a></li>
-                <li><a href="#" >Skills</a></li>
-                <li><a href="#" >Projects</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="skills.html" >Skills</a></li>
+                <li><a href="projects.html" >Projects</a></li>
             </ul>
 
             <div class="box-icons">
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/visha9764"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/vishal-kammari/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://x.com/Vishal__9764"><i class='bx bxl-twitter'></i></a>
             </div>
         </header>
 
@@ -35,17 +35,22 @@
 
         <section class="hero">
             <div class="hero-info">
-                <!-- <div class="hero-info-title">
-                    <i class='bx bxl-sketch'></i>
-                    Hi I'm VISHALdfvffd
-                </div> -->
-                <!-- <i class='bx bxl-sketch'></i> -->
-                <h1><span class="gradiant">Hi I'm VISHAL</span></h1>
-                <p>I'm a full stack developer with experience in crafting beautiful websites </p>
+                <h1><span >Hi I'm VISHAL</span></h1>
+                <h2>I'm a <span class="auto-type gradiant" "></span></h2>
+                <p>I'm a <span class="gradiant" style="font-weight: 600;">full stack developer</span> with experience in crafting beautiful websites </p>
                 <button> Contact Me</button>
             </div>
         </section>
-    </div>
+        
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
+    <script>
+        var typed=new Typed(".auto-type",{
+            strings:["MERN Stack Developer","Competitive Programmer","Open Source Contributor"],
+            typeSpeed:50,
+            backSpeed:50,
+            loop:true
+        });
+    </script>
 </body>
 </html>
