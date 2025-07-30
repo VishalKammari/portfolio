@@ -295,3 +295,37 @@ div header ul li a:hover{
         height: 100%;
     }
 }
+
+
+
+.live-indicator {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: green;
+  font-size: 1.1rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 0 0 5px green, 0 0 15px green, 0 0 15px green;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green;
+  }
+  50% {
+    box-shadow: 0 0 8px green, 0 0 16px green, 0 0 24px green;
+  }
+  100% {
+    box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green;
+  }
+}
